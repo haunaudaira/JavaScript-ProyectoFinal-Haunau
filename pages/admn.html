@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VetCare es un software creado con el objetivo de digitalizar la gestión clínica veterinaria para un mejor control de la información">
+    <meta name="keywords" content="veterinaria, software, clínica, atención veterinaria, sistema veterinario, turnos veterinarios, software veterinario">
+    <meta http-equiv="Pragma" content="no-cache"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="shortcut icon" href="./images/logo/favicon-32x32.png" type="image/x-icon">
+    <title>VetCare | Administración | Turnos </title>
+</head>
+<body class="bg">
+    <header class="header-txt" id="headerUser">
+        <p> <a href="./inicio.html">VetCare</a> </p>
+        <section class="desplegable">
+            <p id="userActual"></p>
+            <div class="desplegable-salir">
+                <ul>
+                    <li>Cuenta</li>
+                    <li><a href="../inicio.html">Salir</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <nav>
+                <ul class="navbar-index">
+                    <li> <a href="#">Inicio</a></li>
+                    <li> <a href="#">Clinica</a></li>
+                    <li class="borde"> <a href="#">Administracion</a> </li>
+                    <li> <a href="#">Estadísticas</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <div class="turnos" id="turnos">
+            <p id="programados">Turnos Programados</p>
+            <p class="borde">Turnos Espontáneos</p>
+        </div>
+
+        <div id="containerh2"></div>
+        <div id="containerForm">
+            <form id="formEspontaneos">
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre">
+                <input type="text" id="motivo" name="motivo" placeholder="Ingrese Motivo">
+                <button type="submit" id="submit">Guardar</button>
+                <button type="reset">Borrar</button>
+            </form>
+            
+        </div>
+
+        <table id="dataTable" class="tablas">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Motivo</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+            <tbody id="dataBody">
+                <!--Datos-->
+            </tbody>
+        </table>
+        <button id="clearLocalStorage">Borrar Lista ⚠️</button>
+    </main>
+    <div id="output"></div>
+    <footer id="footer"> 
+
+    </footer>
+    <script src="../js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

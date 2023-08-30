@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VetCare es un software creado con el objetivo de digitalizar la gestión clínica veterinaria para un mejor control de la información">
+    <meta name="keywords" content="veterinaria, software, clínica, atencion veterinaria, sistema veterinario">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico:regular" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Vet Care | Software Veterinario</title>
+</head>
+<body class="bg_inicio">
+    <header>
+        <nav class="header__login" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">
+            <a href="#abajo">Iniciar</a>
+        </nav>
+    </header>
+    <main>
+        <section class="index__nombreyfoto">
+            <div class="index__txt" data-aos="fade-down">
+                <h1>VetCare</h1>
+                <p>Software desarrollado para uso veterinario</p>
+            </div>
+            <div class="index__gato" data-aos="fade-down" data-aos-duration="1000">
+                <img src="./images/index/pets.png" alt="gato animado">
+            </div>
+        </section>
+    
+        <div class="cards__index">
+            <div class="card" class="tarjetas__index" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="500" style="width: 20rem;">
+                <img src="./images/cards/1.png" class="card-img-top" alt="imagen ilustrativa">
+                <div class="card-body">
+                    <p class="card-text">VetCare es un software creado con el objetivo de digitalizar la gestión clínica veterinaria para un mejor control de la información</p>
+                </div>
+            </div> 
+            <div class="card" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500"  style="width: 20rem;">
+                <img src="./images/cards/2.jpg" class="card-img-top" alt="imagen ilustrativa">
+                <div class="card-body">
+                    <p class="card-text">De fácil acceso y 100% online para que puedas tener toda la información aquí alojada a tu alcance en cualquier momento y lugar</p>
+                </div>
+            </div> 
+            <div class="card" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="500" style="width: 20rem;">
+                <img src="./images/cards/3.png" class="card-img-top" alt="imagen ilustrativa">
+                <div class="card-body">
+                    <p class="card-text">Vas a contar con total control de administración de usuarios así como también asistencia de calidad del equipo de soporte.</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="iniciosesion" data-aos="fade-up" data-aos-delay="200">
+            <h3>Ingresa o Registrate</h3>
+            <div class="mb-3">
+                <label for="name">Ingresa tu nombre</label>
+                <input type="text" class="form-control" id="nombreUsuario" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="(no es necesario este dato)">
+                <div id="emailHelp" class="form-text">Nunca compartiremos esta información con nadie</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="(no es necesario este dato)">
+            </div>
+            <nav class="iniciosesion__botones">
+                <button type="button" class="btn btn-secondary" onclick="btningresar()" id="ingresar">Ingresar</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrarse</button>
+            </nav>
+            </form>
+            <a name="abajo"></a>
+        </form>
+    </main>
+
+    <footer class="pie_index">
+        <section class="pie__indeximg">
+            <div>
+                <a href="https://www.facebook.com/" target="_blank"><img class="logo1" src="images/redes/facebookpng.png" alt="logofacebook"></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/" target="_blank"><img class="logo2" src="images/redes/instagrampng.png" alt="iglogo"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/dairahaunau/" target="_blank"> <img class="logo3" src="images/redes/linkedinpng.png" alt="linkedinlogo"></a>
+            </div>
+        </section>
+        <a href="./pages/contacto.html" target="_blank">Contacto</a>
+        <a href="">Sobre Nosotros</a>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/inicio.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,347 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+//////// ESTILO DE PAGINA INICIO
+
+.bg_inicio{
+    background-image: url(../images/fondos/fondoxl.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.header__login{
+    text-align: right;
+    margin: 20px;
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+        
+        &:hover{
+            background-color:rgba(240, 248, 255, 0.384);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.index__nombreyfoto{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .index__txt{
+        text-align: left;
+        h1{
+        font-family: 'Pacifico', cursive;
+        font-size: 95px;
+        }
+
+        p{
+            padding-left: 25px;
+            font-size: 25px;
+        }
+    }
+    img{
+        padding: 0;
+        animation: move-imagen 4s linear infinite;
+        width: 600px;
+        
+        @keyframes move-imagen {
+            0%{
+                transform: translateY(4%);
+            }50%{
+                transform: translateY(0%);
+            }100%{
+                transform: translateY(4%);
+            }   
+    }
+}
+}
+
+.cards__index{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 130px;
+    margin-bottom: 100px;
+
+    .card{
+        border: none;
+        img{
+            align-items: center;
+        }
+    }
+}
+
+.iniciosesion{
+    margin: auto;
+    margin-top: 80px;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 100px;
+    background-color: #ffffffd2;
+    box-shadow:1px 1px 30px -5px #212222 ;
+    
+    .iniciosesion__botones{
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);padding: 6px;
+            line-height: 45px;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #6C757D;
+            &:hover{
+                background-color: #4f565c;
+            }
+        }
+    }
+}
+
+///// PIE 
+.pie_index{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #9de7d746;
+    position: absolute; 
+    bottom: auto;
+    width: 100%;
+    padding: 10px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.pie_index{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #9de7d746;
+    position: absolute; 
+    bottom: auto;
+    width: 100%;
+    padding: 10px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .pie__indeximg{
+        display: flex;
+        align-items: center;
+        .logo1{
+            margin: 5px;
+            width: 40px;
+            &:hover{
+                transform:scale(1.1, 1.1);
+            }
+        }
+
+        .logo2{
+            margin: 5px;
+            width: 30px;
+            &:hover{
+                transform:scale(1.1, 1.1);
+            }
+        }
+
+        .logo3{
+            margin: 5px;
+            width: 30px;
+            &:hover{
+                transform:scale(1.1, 1.1);
+            }
+        }
+    }
+}
+
+/// INICIA ESTILO PÁGINA ADMINISTRATIVA
+.bg{
+    background-image:url(../images/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.desplegable{
+    position: relative;
+    > a {
+        color: black;
+        text-decoration: none;
+        &:hover{
+            color: white;
+        }
+    }
+    &:hover{
+        background-color: rgb(227, 206, 250);
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .desplegable-salir{
+        display: none;
+        border-radius: 3px;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.274);
+        position: absolute;
+        padding: 15px;
+        left: -50px;
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: left;
+        }
+        li{
+            a{
+                color: black;
+                display: block;
+                padding: 5px;
+                text-decoration: none;
+                &:hover{
+                    background-color: rgb(227, 206, 250);
+                    color: white;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    &:hover{
+        .desplegable-salir{
+            display: block;
+        }
+    }
+}
+
+.navbar-index{
+    list-style: none;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 19px;
+    padding: 0;
+    margin-bottom: 35px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    li{
+        word-spacing: 2rem;
+    }
+    .borde{
+        border-bottom: solid 1px black;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        word-spacing: 2em;
+    }
+}
+
+
+.header-txt{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 19px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.425);
+    p{
+        margin: 0;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+
+
+.tablas{
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+    background-color: rgba(213, 205, 224, 0.733);
+    border-radius: 10px;
+    th{
+        font-size: 20px;
+        padding: 15px;
+    }
+    td{
+        font-size: 19px;
+        padding-left: 10px;
+    }
+}
+
+//FORM 
+
+#containerForm {
+    text-align: center;
+    margin-top: 60px;
+    #formEspontaneos{
+        input{
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.363);
+        }
+        button{
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 10px;
+            border:none;
+            border-radius: 5px;
+            background-color: rgba(89, 0, 255, 0.685);
+            &:hover{
+                background-color: rgb(238, 238, 238);
+                color: black;
+            }
+        }
+    }
+}
+
+#clearLocalStorage{
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    background-color:  rgba(213, 205, 224, 0.733);
+    position: fixed;
+    bottom: 0%;
+    &:hover{
+        background-color: white;
+    }
+}
+
+
+h2{
+    margin-left: 55px;
+    margin-bottom: 20px;
+}
+.turnos{
+    display: flex;
+    margin-bottom: 25px;
+    p{
+        font-size: 19px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .borde{
+        border-bottom: solid 1px black;
+    }
+}
+
+
+footer{
+    right: 0%;
+    position: fixed;
+    bottom: 0%;
+    margin: 5px;
+}
